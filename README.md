@@ -1,6 +1,6 @@
-Obreaker Js Object Debugger
-===========================
-A script which traverse and print object properties recursively to your web browser console.
+Obreaker.js
+===========
+A small script which traverse and print object properties recursively to your web browser console. Very helpful when debugging, especially on older browsers such as IE8.
 
 ![Screenshot](https://raw.githubusercontent.com/isteven/obreaker/master/screenshot.jpg)
 
@@ -16,14 +16,19 @@ Usage
 --
 Include obreaker.js, such as
 
-    <script src="obreaker.js"></script>
+    <html>
+        <head>
+            <script src="obreaker.js"></script>
+            ...
+        </head>
+        ...
 
 
 and use it like this:
 
     obreaker.log( 'hello world!', 'my host is: ' , window.location.host );
 
-    // Similar like how you use console.log.
+Basically it's similar with console.log.
 
 Note
 --
