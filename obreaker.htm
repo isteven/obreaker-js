@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Javascript Object Breaker</title>    
+    <script src="obreaker.js"></script>                 
+</head>
+    
+<body>
+</body>
+</html>
+<script>
+    var text1   = 'This is a list of actor and actress';
+    var data    = [      
+        { id: 1, firstName: "Tom",      lastName: "Cruise",     checked: true },
+        { id: 2, firstName: "Brad",     lastName: "Pitt",       checked: false },
+        { id: 3, firstName: "Leonardo", lastName: "DiCaprio",   checked: false, movies: [ 'Titanic', 'The Quick and The Dead', 'The Great Gatsby' ] },                
+    ];
+    var text2   = 'Just a random string';
+    var cdate   = new Date; 
+    obreaker.log( text1, data, text2, 'hooray,', 'it', 'works!', 'today is: ', cdate.toString() );
+</script>
