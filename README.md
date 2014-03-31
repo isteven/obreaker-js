@@ -9,7 +9,7 @@ Demo: http://jsfiddle.net/T69b3/1/ or download all the files into a same folder 
 Features
 --
   - Print everything. Expression, string, object, array.. all in one liner!
-  - Different closures, [] for array and {} for object so you can easily differentiate them
+  - Different closures, [ ] for array and { } for object so you can easily differentiate them
   - Set how deep you would like to traverse the object. Default is 999.
   
 Usage
