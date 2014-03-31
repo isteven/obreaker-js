@@ -1,20 +1,21 @@
 /* 
- * Obreaker
+ * Obreaker.js
  * A debuger to traverse and print object properties recursively to your web
  * browser console.
  *
  * Released under MIT License
+ *
  * --------------------------------------------------------------------------------
- * MIT License
+ * The MIT License (MIT)
  *
- * Copyright (C) 2014 Ignatius Steven
+ * Copyright (C) 2014 Ignatius Steven (https://github.com/isteven)
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of 
- * this software and associated documentation files (the "Software"), to deal in 
- * the Software without restriction, including without limitation the rights to 
- * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of 
- * the Software, and to permit persons to whom the Software is furnished to do so, 
- * subject to the following conditions: 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy 
+ * of this software and associated documentation files (the "Software"), to deal 
+ * in the Software without restriction, including without limitation the rights 
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+ * copies of the Software, and to permit persons to whom the Software is 
+ * furnished to do so, subject to the following conditions: 
  *
  * The above copyright notice and this permission notice shall be included in all 
  * copies or substantial portions of the Software.
@@ -28,37 +29,22 @@
  * SOFTWARE.
  * --------------------------------------------------------------------------------
  */
-
+ 
 obreaker = 
 {     
-    /////////////
-    // SETTINGS
-    /////////////
+    /*
+     * SETTINGS
+     */
 
     // Debug message prefix
     console_prefix: '[obreaker]',
     
-    // Traverse depth: 
+    // Traverse depth (how deep you want to recursively process object's children / property)
     traverse_depth : 999,
-    
-    /*
-     * Debug to console
-     *
-     * Usage sample:
-     *
-     * name = 'Bill';
-     * data = 
-     * {
-     *      { 
-     *          name: 'John' 
-     *      },
-     *      { 
-     *          name: 'Jane' 
-     *      }
-     * };
-     * obreaker.log( 'a string', name, data, 'another string' [, ...] );
-     */
 
+    /*
+     * MAIN FUNCTION
+     */
     log: function() 
     {               
 
@@ -166,6 +152,7 @@ obreaker =
         }
     },
 
+    /* To determine whether to use [ ] or { } */
     getClosure: function( item ) {
         var closure     = new Array();
         var objectType  = typeof item;
@@ -197,6 +184,7 @@ obreaker =
         return closure;
     },
 
+    /* Process error */
     parseError: function( error ) {
         var errorArr = error.split( /[@|/]/ ),
             functionName = '';
