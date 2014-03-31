@@ -2,8 +2,7 @@ Obreaker Js Object Debugger
 ===========================
 A script which traverse and print object properties recursively to your web browser console.
 
-
-<br />![Screenshot](https://raw.githubusercontent.com/isteven/obreaker/master/screenshot.jpg)
+![Screenshot](https://raw.githubusercontent.com/isteven/obreaker/master/screenshot.jpg)
 
 Demo: http://jsfiddle.net/T69b3/1/ or download all the files into a same folder and open obreaker.htm.
 
@@ -15,11 +14,16 @@ Features
   
 Usage
 --
-Load obreaker.js and use it like this:
+Include obreaker.js, such as
+
+    <script src="obreaker.js"></script>
+
+
+and use it like this:
 
     obreaker.log( 'hello world!', 'my host is: ' , window.location.host );
 
-(Similar to console.log)
+    // Similar like how you use console.log.
 
 Note
 --
@@ -35,9 +39,4 @@ Tested on:
 
 Licence
 --
-Released under the MIT license. 
-=======
-obreaker
-========
-
-A script which traverse and print object properties recursively to your web browser console. 
+Released under the MIT license.
