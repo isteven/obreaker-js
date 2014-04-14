@@ -32,7 +32,8 @@ Basically it's similar with console.log.
 
 Note
 --
-On Firebug's console, it displays function name & line number of the caler properly. But it simply display the obreaker.js on Chrome's and/or IE's console.
+1) On Firebug's console, it displays function name & line number of the caler properly. But it simply display the obreaker.js on Chrome's and/or IE's console.
+<br />2) It will loop non-stop recursively on JQuery objects and/or AngularJs scope objects, so if you really need to loop them, set the traverse depth to 1 and go level by level -while specifying which variable to go next-, or use normal console.log().
 
 Browser Compatibility
 --
